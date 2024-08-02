@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Code Generator</title>
+    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/3126/3126504.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="qr-generator">
+            <h1>QR Code Generator</h1>
+            <div class="qr-code">
+                <div class="placeholder" id="placeholder">🌀 Generating QR Code...</div>
+                <img src="" id="img" alt="QR Code will appear here" class="hidden">
+            </div>
+            <select id="size">
+                <option value="100">100x100</option>
+                <option value="150">150x150</option>
+                <option value="200">200x200</option>
+                <option value="250" selected>250x250</option>
+                <option value="300">300x300</option>
+            </select>
+            <textarea placeholder="Enter Your Url Link" id="qrtext"></textarea>
+            <button onclick="genQR()">Generate QR Code</button>
+            <p>Developed by <span>Keanghok</span></p>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
